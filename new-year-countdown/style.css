@@ -1,0 +1,57 @@
+@import url('https://fonts.google.com/specimen/Comic+Neue');
+* {
+    margin: 0;
+    padding: 0;
+    color: rgb(238, 238, 238);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+body {
+    background-color: slateblue;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+body h2{
+    font-size: 40px;
+}
+#year{
+    font-size: 100px;
+}
+.countdown {
+    display: flex;
+    gap: 40px;
+    font-size: 70px;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.countdown div::before{
+    content: "";
+    position: absolute;
+    font-size: .35em;
+    margin-left: 7px;
+    bottom: 10px;
+    /* left: 0; */
+    /* margin-bottom: 5px; */
+    line-height: 35px;
+
+}
+.countdown #days::before{
+    content: "Days";
+}
+.countdown #hours::before{
+    content: "Hours";
+}
+.countdown #minutes::before{
+    content: "Minutes";
+}
+.countdown #seconds::before{
+    content: "Seconds";
+}
